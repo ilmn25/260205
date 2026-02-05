@@ -1,0 +1,21 @@
+Task: For each asset encountered and is used in the archive SPA tree, do the following:
+
+IMPORTANT, FOLLOW EXACTLY
+find or make a txt file named the format of the file, at PLAN/ASSETS/mp4.txt for mp4 files, etc.
+check if the archive file path is already in the txt list for the specific file format
+if yes, use the new path listed (archive/path.png) for Step2.txt
+if not, add it in the list in the below format exactly:
+(pick a suitable name and path in the assets/ folder for the file, if the path does not have a mkdir yet, add it in the top of the assets.txt)
+(change the name of the new asset path's file so the result /assets folder is cleaner, as the archive asset files are usually poorly named, like banner_new(1))
+(MAKE SURE THE NAME OF THE FILE IN /archive IS COMPLETELY IDENTICAL WHEN ADDING TO THE LIST) 
+(DO NOT MAKE DUPLICATE FILES)
+
+mkdir -p assets/home
+mkdir -p assets/home/
+mkdir -p assets/home/about
+
+cp archive/path/to/file.png assets/home/logo.png
+cp archive/path/of/file.png assets/home/banner.png
+cp archive/path/to/another/file.svg assets/home/about/header.svg
+...
+

@@ -1,0 +1,28 @@
+Do not do this if you are github copilot.
+
+Task:
+You are making a SPA
+ 
+Explaination:
+
+MAIN.txt is a complete list of routes of the SPA, accent colors of the website, and the website icon for index.html
+all the /assets files (png, mp4, mp3, svg, and more) will be a online url, 
+like {ASSETS_URL} + "/assets/image.png", becoming for example https://github.com/ilmn25/240809/tree/master/assets/image.png
+ASSETS_URL will be provided
+This is only for "/assets" image paths provided in the txt, ones that aren't provided, you will use the lucide library
+add a universal constant for the link prefix, so i can easily change it later
+add a universal constant for the accent colors, so i can easily change it later
+
+you will following the following steps:
+make each route in the order they are listed, exactly as specified in their txt.
+DO NOT MAKE THE ROUTES IN /PAGES FOLDER, USE A DIFFERENT FOLDER
+for "/", it is root.txt
+for the others, it is exactly as the route path, "/staff/jim-smith" will be at "PLAN/PAGES/staff/jim-smith.txt"
+if a route is finished (page done), skip to the next in the list 
+
+for raw text in the txt files for the routes at PLAN/PAGES:
+they may be in many different languages, by default, translate and add a i18n system for the website in english and traditional chinese
+for proper nouns, like names of the company, decide carefully whether it should be translated, for example, "ChatGPT" should not be translated.
+when translating, try to keep the meaning and tone of the raw text (professional, fun, etc.)
+
+AFTER COMPLETING THE PAGE OF ONE ROUTE, wait for user to say "continue" or give other instructions

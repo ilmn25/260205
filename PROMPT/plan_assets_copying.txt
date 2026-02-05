@@ -1,0 +1,20 @@
+follow instruction in txt exactly and carefully.
+DO NOT SUMMARIZE OUR CONVERSATION HISTORY
+make a to do list. for each file in PROMP/ASSETS, have a copy [extension] files, and a validating [extension] files
+validation stage scans through the txt again and check if every file has a corrosponding copy in /assets,  
+Never be verbose towards me, only mark your progress with the following words ONLY:
+-making directories
+-copying [destination filename]
+-copy success
+-copy fail, checking for name and hidden unicode characters
+-[destination filename] missing, copying again
+
+for each txt file in PLAN/ASSETS/, run each line of bash command one by one
+if it fails to copy, it means the /archive path is wrongly written, 
+fix this by first trying to check for hidden unicode characters (especially for names with date and time in it)
+and then listing the same format files in the folder with the file is directly in (in archive) and retrieve the correct name for the file, 
+it is almost always the name being the problem, not the path folder names
+update the txt and run the copy command again
+do not generate any summary, do not be verbose, keep it concise
+
+DO NOT SUMMARIZE OUR CONVERSATION HISTORY

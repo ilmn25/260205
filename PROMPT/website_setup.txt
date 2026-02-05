@@ -1,0 +1,74 @@
+Do not do this if you are github copilot.
+
+Task:
+You are making a SPA
+Set up a project with the project name and description provided
+
+
+
+
+The prompt for the project is the website description + "Do not add anything unless explicitly told to do so"
+Set up the react and tailwind stack, and make a empty root page, DO NOT ADD ANYTHING ELSE
+
+imports and versions 
+"react": "https://esm.sh/react@^19.2.4",
+"react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+"react/": "https://esm.sh/react@^19.2.4/",
+"lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+"react-router-dom": "https://esm.sh/react-router-dom@^7.13.0",
+"i18next": "https://esm.sh/i18next@^25.8.3",
+"react-i18next": "https://esm.sh/react-i18next@^16.5.4",
+"i18next-browser-languagedetector": "https://esm.sh/i18next-browser-languagedetector@^8.2.0"
+
+import i18n from 'i18next';
+import { initReactI18next } from 'react-i18next'; 
+
+App.tsx
+import React, { Suspense } from 'react';
+import { HashRouter, Routes, Route } from 'react-router-dom';
+import Layout from './components/Layout';
+
+const HomePage = React.lazy(() => import('./pages/HomePage')); 
+
+const App: React.FC = () => {
+  return (
+    <HashRouter>
+      <Layout> 
+          <Routes>
+            <Route path="/" element={<HomePage />} /> 
+          </Routes> 
+      </Layout>
+    </HashRouter>
+  );
+};
+
+export default App;
+
+i18n.ts
+export const initI18n = async () => {
+  try {
+    const [en, zh] = await Promise.all([
+      fetch('./locales/en/translation.json').then(res => res.json()),
+      fetch('./locales/zh/translation.json').then(res => res.json())
+    ]);
+
+    await i18n
+      .use(LanguageDetector)
+      .use(initReactI18next)
+      .init({
+        debug: false,
+        fallbackLng: 'en',
+        interpolation: {
+          escapeValue: false,
+        },
+        resources: {
+          en: { translation: en },
+          zh: { translation: zh }
+        },
+      });
+  } catch (error) {
+    console.error('Failed to load translations', error);
+  }
+};
+
+export default i18n;

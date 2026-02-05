@@ -1,0 +1,13 @@
+
+DO page_generation.txt, AND DO assets_handling.txt WHEN ENCOUNTER A ASSET FILE (DEFINED IN STEP 2), follow instruction in txt exactly and carefully.
+DO NOT SUMMARIZE OUR CHAT HISTORY
+make a to do list with these 2
+-make page_generation file
+-make assets_handling files
+Never be verbose towards me, only mark your progress with the follow words ONLY:
+-step 2 start
+-checking what is already done...
+-begin making [route here].txt
+-adding a asset to PLAN/ASSETS (step 3)
+-[route here].txt done
+-waiting for "continue" to do next route "[next route here]"

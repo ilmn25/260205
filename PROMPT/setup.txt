@@ -1,0 +1,26 @@
+Task: 
+Generate the following file, based on the SPA tree located at archive/index.html
+output the result in PLAN/MAIN.txt
+do not include the text in (), it is explaination for you
+when a asset file is in the page, do Step3.txt
+
+PROJECT NAME:
+Example Name
+
+DESCRIPTION:
+A short description of the purpose of the site, for another ai agent's reference
+
+WEBSITE ICON: 
+/assets/new/path/icon.png
+
+THEME COLORS:
+yellow
+indigo
+
+ROUTES:
+(pick a clean and suitable route for each accessible subpage found from the SPA tree, as the original is routing name is usually poorly designed)
+"/" - archive/path/to/html/file.html
+"/about" - archive/path/to/html/file.html
+"/course/electives" - archive/path/to/html/file.html
+"/course/electives/math" - archive/path/to/html/file.html
+"/contact" - archive/path/to/html/file.html

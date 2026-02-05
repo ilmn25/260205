@@ -1,0 +1,97 @@
+Task: 
+For each route in PLAN/MAIN.txt, generate the following file for the associated html at the path provided
+check if the route is already done and has txt first, skip if yes
+do not include the text in (), it is explaination for you
+do not add anything not in the following format (such as a summary of the page)
+output the result at PLAN/PAGES/[route].txt, such as PLAN/PAGES/staff/jim_smith.txt
+for "/" route, do root.txt  
+
+only do one route at a time, and wait for me for "continue" or other requests
+do the routes in the order of the MAIN.txt list
+ALWAYS INCLUDE ALL OF THE RAW TEXT CONTENT OF THE PAGE, PARAGRAPHS, CAPTIONS, SMALL TEXT, AND ALL, IN ITS ORIGINAL LANGUAGE.
+NEVER INCLUDE FONT OR OTHER STYLING INFORMATION, SUCH AS COLOR
+NEVER INCLUDE LOCALIZATION DESCRIPTION, JUST INCLUDE THE TEXT IN THE WAY IT IS SHOWN.
+
+IMPORTANT
+URI/URL Handling
+WHEN THERE IS URI TO ANOTHER PAGE IN THE TREE, USE THE ROUTE OF THE PAGE IN MAIN.txt LIST, NOT THE PATH OF THE HTML IN /archive 
+when there is uri to a online resource (youtube video, etc) Keep the same link, make sure it is correct.
+when a asset file WHICH IS NOT A FONT is in the page (mp3, mp4, svg, png, etc) ALWAYS INCLUDE IT, process each according to assets_handling.txt (IMPORTANT), 
+and ALWAYS include the resolution after the path of the asset
+
+below is the exact format of the file, i want you to follow this exactly
+
+ROUTE: 
+/about
+
+PAGE NAME:
+About Us
+
+PAGE STRUCTURE:
+1. Header, same as most of the website, with the navigation bar, logo and name of the website. The name and logo redirects to "/"
+Name: Super Classes Education
+Picture: /assets/new/path/image.png 523x214
+Navigation bar:  
+Courses 
+    /courses/math - Math (ROUTE OF PAGE IN MAIN.txt LIST)
+    /courses/English - English
+/about - About Us
+/pricing - Pricing
+
+
+2. (Brief description of the section, excluding font, localization (important) or other similar styling) A hero banner and the page's title on top of it
+(for each section, ALWAYS INCLUDE THE ENTIRE TEXT CONTENT (important) and the new image/audio/video path, only structure and content, no styling or localization informaation)
+Title: About Us
+Banner: /assets/new/path/image.gif 124x156
+
+3. A grid section containing each staff, their name and degree, each can be clicked on to enter their page
+Teacher: Jim Smith
+Picture: /assets/new/path/image.png 162x211
+Degree: Bsc in Computer Science @ Hong Kong University
+Route: /staff/jim_smith (ROUTE OF PAGE IN MAIN.txt LIST)
+
+Teacher: Tommy Chan
+Picture: /assets/new/path/image.png 162x167
+Degree: Masters in English @ Harvard University, Bsc in English @ Washington University
+Route: /staff/tommy_chan
+
+Teacher: Alice Wong
+Picture: /assets/new/path/image3.png 122x152
+Degree: PhD in Mathematics @ Stanford University
+Route: /staff/alice_wong
+
+4. A paragraph with a image beside it, with a caption
+Paragraph: "Our mission is to provide quality education and foster lifelong learning."
+Image: /assets/new/path/image.jpg 132x134
+Caption: "Students engaged in collaborative learning"
+ 
+5. A paragraph with a image beside it, with a caption
+Paragraph: "威廉王國英語教室作為一間以心為心、師資優良的教育中心，旨在為小朋友提供「親切、專業、生動」的英文學習體驗。
+我們深信寓學習於娛樂，透過專業外語老師團隊適切的鼓勵和有趣互動的教學方式，藉此培養學生對英語的興趣，才是學好英文的不二法門。"
+Image: /assets/new/path/image2.jpg 124x124
+Caption: "Faculty leading interactive workshops"
+
+6. A video embed with a description
+Video embed: https://youtu.be/14OBXAjgj7a
+Description: "威廉王國英語教室輔導專班，是專為額外需要鞏固英語基礎的學童而設。"
+
+7. A testimonial section with quotes from students
+Quote: "This school has transformed my learning experience."
+Student: Sarah Lee
+Picture: /assets/new/path/student1.png 122x152
+
+Quote: "The teachers are supportive and inspiring."
+Student: David Wong
+Picture: /assets/new/path/student2.png 124x152
+
+8. A contact section with address and map
+Address: "123 Education Street, Kowloon, Hong Kong"
+Map: a google map embedding to the address
+Email: contact@ourschool.edu.hk
+Phone: +852 1234 5678
+
+8. A large centered image
+Image: /assets/new/path/image.png 1214x1021
+
+9. Footer, same as most of the WEBSITE
+Text: "© 2025, Super Classes Education"
