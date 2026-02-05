@@ -1,13 +1,9 @@
-Do not do this if you are github copilot.
-
 Task:
-You are making a SPA
-Set up a project with the project name and description provided
+You are making a SPA in vite, react, tailwind, and tsx
+Set up a project with the project name and description provided in MAIN.txt
 
-The prompt for the project is the website description + "Do not add anything unless explicitly told to do so"
-Set up the react and tailwind stack, and make a empty root page, DO NOT ADD ANYTHING ELSE
-
-imports and versions 
+Set up the react and tailwind stack in /web/, and make a empty root page, wait for further instruction
+default imports and versions 
 "react": "https://esm.sh/react@^19.2.4",
 "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
 "react/": "https://esm.sh/react@^19.2.4/",

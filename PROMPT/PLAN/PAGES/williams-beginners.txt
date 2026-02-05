@@ -1,0 +1,75 @@
+ROUTE:
+"/courses/williams-beginners"
+
+PAGE NAME:
+WILLIAMS BEGINNERS
+
+PAGE STRUCTURE:
+1. Header & Navigation
+Link | Route | /courses/williams-beginners - WILLIAMS BEGINNERS
+Link | Route | /courses/jolly-phonics - JOLLY PHONICS
+Link | Route | /contact - CONTACT
+
+2. Page Titles
+Text | Small title | REGULAR COURSE
+Text | Title | WILLIAMS BEGINNERS
+Text | Title (ZH) | 小小威廉基礎班
+
+3. Age / Level
+Text | Subtitle | 4-6 歲 | K2-P1
+
+4. Introduction (ZH)
+Text | Paragraph | 小小威廉基礎班能全方位從閱讀，文法，寫作等，為學生打好英語基礎，讓他們輕鬆應付升讀小學的英語要求。配合我們精心設計的教材，老師透過由淺入深的方法，令學生更易掌握初小的英語課題，包括(Pronounce, adjective, articles, numbers, question words) 等等，為入讀小學做好準備。
+
+5. Key Facts
+Text | Fact | 每堂一小時
+Text | Fact | 2-6人
+
+6. Media
+Video | Intro video | /assets/williams-beginners/intro-video.mp4 (MP4 hosted)
+Image | Hero background | /assets/williams-beginners/hero-bg.jpg
+Image | Slide 1 | /assets/williams-beginners/slide-1.jpg
+Image | Mascots | /assets/williams-beginners/mascots-1-300.png
+Image | Feature graphic | /assets/williams-beginners/feature-5-1.png
+Image | Course content grid | /assets/williams-beginners/course-content-1.png
+Image | Mascot introduce | /assets/williams-beginners/mascot_introduceL.png
+Image | William icon | /assets/williams-beginners/william-eng-13.png
+
+7. Course Content (grid & timings)
+Image | Course content 1 | /assets/williams-beginners/course-content-1.png
+Text | Title | 互動教學
+Text | Subtitle | 15 Mins
+Image | Course content 2 | /assets/williams-beginners/course-content-2.png
+Text | Title | 閱讀、聆聽、默書等
+Text | Subtitle | 30 Mins
+Image | Course content 3 | /assets/williams-beginners/course-content-3.png
+Text | Title | 重溫及遊戲小測
+Text | Subtitle | 10 Mins
+Image | Course content 4 | /assets/williams-beginners/course-content-4.png
+Text | Title | 向家長解釋學童進度
+Text | Subtitle | 5 Mins
+
+8. Features & Merits
+List | Features | 全英語環境; 系統化文法練習; 閱讀與寫作基礎; 針對升小訓練
+List | Merits | 建立寫作基礎; 培養閱讀技巧; 提升語法理解; 訓練應試能力
+
+9. Footer
+Text | Footer | © 2025 Williams Kingdom
+
+ASSETS (added):
+- /assets/williams-beginners/intro-video.mp4 (mp4)
+- /assets/williams-beginners/hero-bg.jpg (jpg)
+- /assets/williams-beginners/slide-1.jpg (jpg)
+- /assets/williams-beginners/william-eng-13.png (png)
+- /assets/williams-beginners/mascots-1-300.png (png)
+- /assets/williams-beginners/mascot_introduceL.png (png)
+- /assets/williams-beginners/feature-5-1.png (png)
+- /assets/williams-beginners/course-content-1.png (png)
+- /assets/williams-beginners/course-content-2.png (png)
+- /assets/williams-beginners/course-content-3.png (png)
+- /assets/williams-beginners/course-content-4.png (png)
+
+NOTES:
+- Hosted video `Williams-Beginners-LQ.mp4` (2025) mapped to `/assets/williams-beginners/intro-video.mp4`.
+- Background hero `Williams-Kingdom-153-scaled.jpg` and slide `William-English-055.jpg` mapped into `jpg.txt`.
+- Copy commands for these assets are staged in `PROMPT/PLAN/ASSETS/{png.txt,jpg.txt,mp4.txt}` and not executed yet. Confirm if you want me to run the copy now, or continue to the next route.

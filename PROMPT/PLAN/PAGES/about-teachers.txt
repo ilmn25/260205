@@ -1,0 +1,213 @@
+ROUTE:
+"/about/teachers"
+
+PAGE NAME:
+Meet Our Teachers
+
+PAGE STRUCTURE:
+1. Header & Intro
+Text | Title | MEET
+Text | Title | OUR TEACHERS
+Text | Paragraph | 我們的英語老師，不僅是一般的外籍老師，他們都是經過威廉精心挑選。具備多年教學經驗及專業教學資格，一致地實踐我們的教學理念。
+
+2. Teacher roster (each entry = Name, Role, Image, Short bio)
+Image | Portrait | /assets/teachers/will_v3.png 768x871
+Text | Name | MR WILL
+Text | Role | HEAD TEACHER
+Text | Bio | United Kingdom · University of Lancaster · TEFL certified
+
+Image | Portrait | /assets/teachers/daniel.jpg 768x926
+Text | Name | MR DANIEL
+Text | Role | HEAD TEACHER
+Text | Bio | United Kingdom · University of Cardiff · CELTA certified
+
+Image | Portrait | /assets/teachers/luke.png 682x786
+Text | Name | MR LUKE
+Text | Role | HEAD TEACHER
+Text | Bio | Australia · University of Technology, Sydney · CELTA certified
+
+Image | Portrait | /assets/teachers/jamie.png 768x828
+Text | Name | MR JAMIE
+Text | Role | HEAD TEACHER
+Text | Bio | United Kingdom · City of Liverpool College
+
+Image | Portrait | /assets/teachers/rhea.png 768x929
+Text | Name | MS RHEA
+Text | Role | HEAD TEACHER
+Text | Bio | English Early Childhood Language and Jolly Phonics
+
+Image | Portrait | /assets/teachers/kerry.png 768x1355
+Text | Name | MS KERRY
+Text | Role | HEAD TEACHER
+Text | Bio | United Kingdom · Open University · TEFL certified
+
+Image | Portrait | /assets/teachers/serena.png 768x753
+Text | Name | MS SERENA
+Text | Role | HEAD TEACHER
+Text | Bio | United Kingdom · Wirral Metropolitan College · CELTA certified
+
+Image | Portrait | /assets/teachers/liam.png 768x850
+Text | Name | MR LIAM
+Text | Role | HEAD TEACHER
+Text | Bio | United Kingdom · Open University · TEFL certified
+
+Image | Portrait | /assets/teachers/andrea.png 768x745
+Text | Name | MS ANDREA
+Text | Role | TEACHER
+Text | Bio | United Kingdom · University of Reading · TEFL certified
+
+Image | Portrait | /assets/teachers/bonnie.png 768x822
+Text | Name | MS BONNIE
+Text | Role | TEACHER
+Text | Bio | United Kingdom · MA in TESOL and CELTA certified
+
+Image | Portrait | /assets/teachers/carlo.png 768x711
+Text | Name | MR CARLO
+Text | Role | TEACHER
+Text | Bio | St. Francis University · Language & Liberal Studies
+
+Image | Portrait | /assets/teachers/clayton.png 768x802
+Text | Name | MR CLAYTON
+Text | Role | TEACHER
+Text | Bio | Canada · Seneca College · TEFL certified
+
+Image | Portrait | /assets/teachers/dean.png 768x793
+Text | Name | MR DEAN
+Text | Role | TEACHER
+Text | Bio | United Kingdom · University of the Arts, London · TEFL certified
+
+Image | Portrait | /assets/teachers/diego.png 604x656
+Text | Name | MR DIEGO
+Text | Role | TEACHER
+Text | Bio | University of Sheffield · TESOL certified
+
+Image | Portrait | /assets/teachers/frances.png 768x757
+Text | Name | MS FRANCES
+Text | Role | TEACHER
+Text | Bio | United Kingdom · University of Newcastle · CELTA certified
+
+Image | Portrait | /assets/teachers/gavin.png 768x748
+Text | Name | MR GAVIN
+Text | Role | TEACHER
+Text | Bio | United Kingdom · University of Middlesex · TEFL certified
+
+Image | Portrait | /assets/teachers/henry.jpg 768x1006
+Text | Name | MR HENRY
+Text | Role | TEACHER
+Text | Bio | United Kingdom · Manchester Metropolitan University
+
+Image | Portrait | /assets/teachers/jason.png 768x997
+Text | Name | MR JASON
+Text | Role | TEACHER
+Text | Bio | United Kingdom · University of Bedfordshire · PGCE certified
+
+Image | Portrait | /assets/teachers/jody.png 768x706
+Text | Name | MR JODY
+Text | Role | TEACHER
+Text | Bio | United Kingdom · University of Coventry · CELTA certified
+
+Image | Portrait | /assets/teachers/jonny.jpg 768x870
+Text | Name | MR JONNY
+Text | Role | TEACHER
+Text | Bio | United Kingdom · University of Bangor · TEFL certified
+
+Image | Portrait | /assets/teachers/justin.png 768x816
+Text | Name | MR JUSTIN
+Text | Role | TEACHER
+Text | Bio | Tung Wah College · Experienced in teaching
+
+Image | Portrait | /assets/teachers/jude.jpg 768x865
+Text | Name | MR JUDE
+Text | Role | TEACHER
+Text | Bio | United Kingdom · University of Leeds · CELTA certified
+
+Image | Portrait | /assets/teachers/karmen2.jpeg 768x853
+Text | Name | MS KARMEN
+Text | Role | TEACHER
+Text | Bio | United Kingdom · University of Bath · TEFL certified
+
+Image | Portrait | /assets/teachers/pauline.jpg 768x843
+Text | Name | MS PAULINE
+Text | Role | TEACHER
+Text | Bio | United Kingdom · University of Liverpool John Moores · TEFL certified
+
+Image | Portrait | /assets/teachers/queenie.jpg 768x807
+Text | Name | MS QUEENIE
+Text | Role | TEACHER
+Text | Bio | Canada · Toronto Metropolitan University · Early Childhood Studies
+
+Image | Portrait | /assets/teachers/shiela.jpg 658x689
+Text | Name | MS SHIELA
+Text | Role | TEACHER
+Text | Bio | City University of Hong Kong · Experienced in teaching
+
+Image | Portrait | /assets/teachers/toby.jpg 768x918
+Text | Name | MR TOBY
+Text | Role | TEACHER
+Text | Bio | TESOL Certified
+
+Image | Portrait | /assets/teachers/tom.png 768x762
+Text | Name | MR TOM
+Text | Role | TEACHER
+Text | Bio | United Kingdom · University of Cambridge · CELTA certified
+
+Image | Portrait | /assets/teachers/tyne.png 768x797
+Text | Name | MS TYNE
+Text | Role | TEACHER
+Text | Bio | United Kingdom · University of Arden · TEFL certified
+
+Image | Portrait | /assets/teachers/vincent.jpg 768x782
+Text | Name | MR VINCENT
+Text | Role | TEACHER
+Text | Bio | United Kingdom · Cardiff Metropolitan University · TEFL certified
+
+Image | Portrait | /assets/teachers/yen.jpg 768x813
+Text | Name | MS YEN
+Text | Role | TEACHER
+Text | Bio | United Kingdom · University of Leicester · TEFL & iPGCE Certified
+
+Image | Portrait | /assets/teachers/ziya.png 768x879
+Text | Name | MR ZIYA
+Text | Role | TEACHER
+Text | Bio | United Kingdom · University of Bedfordshire · TEFL certified
+
+3. Footer
+Text | Footer | © 2025 Williams Kingdom
+
+ASSETS (added):
+- /assets/teachers/jamie.png (png)
+- /assets/teachers/luke.png (png)
+- /assets/teachers/rhea.png (png)
+- /assets/teachers/kerry.png (png)
+- /assets/teachers/serena.png (png)
+- /assets/teachers/liam.png (png)
+- /assets/teachers/andrea.png (png)
+- /assets/teachers/bonnie.png (png)
+- /assets/teachers/carlo.png (png)
+- /assets/teachers/clayton.png (png)
+- /assets/teachers/dean.png (png)
+- /assets/teachers/diego.png (png)
+- /assets/teachers/frances.png (png)
+- /assets/teachers/gavin.png (png)
+- /assets/teachers/jason.png (png)
+- /assets/teachers/jody.png (png)
+- /assets/teachers/justin.png (png)
+- /assets/teachers/tom.png (png)
+- /assets/teachers/tyne.png (png)
+- /assets/teachers/ziya.png (png)
+- /assets/teachers/daniel.jpg (jpg)
+- /assets/teachers/henry.jpg (jpg)
+- /assets/teachers/jonny.jpg (jpg)
+- /assets/teachers/jude.jpg (jpg)
+- /assets/teachers/karmen2.jpeg (jpeg)
+- /assets/teachers/pauline.jpg (jpg)
+- /assets/teachers/queenie.jpg (jpg)
+- /assets/teachers/shiela.jpg (jpg)
+- /assets/teachers/toby.jpg (jpg)
+- /assets/teachers/vincent.jpg (jpg)
+- /assets/teachers/yen.jpg (jpg)
+
+NOTES:
+- All teacher images were added to `PROMPT/PLAN/ASSETS/png.txt` or `PROMPT/PLAN/ASSETS/jpg.txt` under `assets/teachers/`.
+- Image sizes were taken from the src attributes where available.
+- Internal site structure and teacher bios preserved as-is from source HTML.

@@ -1,0 +1,98 @@
+ROUTE:
+"/"
+
+PAGE NAME:
+Home
+
+PAGE STRUCTURE:
+1. Header with navigation and logo
+Text | Site name | Williams Kingdom | 威廉王國英語教室
+Image | Logo | /assets/home/logo.png 1116x380
+Text | Purpose | site logo
+Text | Navigation item | Regular Course 課程
+Text | Navigation item | NEWS 最新消息
+Link | Route | /about - About Us
+Link | Route | /courses/jolly-phonics - JOLLY PHONICS
+Link | Route | /courses/little-williams-learners - LITTLE WILLIAMS LEARNERS
+Link | Route | /courses/williams-talk-time - WILLIAMS TALK TIME
+Link | Route | /courses/williams-beginners - WILLIAMS BEGINNERS
+Link | Route | /courses/williams-reading-speaking - WILLIAMS READING and SPEAKING
+Link | Route | /courses/williams-grammar-writing - WILLIAMS GRAMMAR and CREATIVE WRITING
+Link | Route | /courses/cambridge-english - CAMBRIDGE ENGLISH
+Link | Route | /courses/intensive-english - INTENSIVE ENGLISH
+Link | Route | /student-portfolio - STUDENT PORTFOLIO
+Link | Route | /contact - CONTACT 聯絡我們
+Link | Route | /careers - CAREERS
+Link | External | https://api.whatsapp.com/send?phone=85246717248 - WhatsApp contact
+
+2. Hero banner
+Text | Button | FREE ASSESSMENT
+Link | External | https://api.whatsapp.com/send?phone=85246717248
+Image | Banner background | /assets/home/hero-bg.jpg n/a
+Text | Purpose | hero banner background
+
+3. REGULAR COURSE (course grid)
+Text | Title | REGULAR COURSE
+
+Text | Course name | JOLLY PHONICS
+Image | Course image | /assets/home/mascot-01.png 912x835
+Text | Purpose | course icon
+Text | Paragraph | 威廉皇牌拼音課程旨於訓練和促進學生的“拼音意識", 有效幫助學生建立英語閱讀能力的基礎 掌握拼讀技巧和改善拆字默書能力,  從而令到學生達到 ”見字能讀, 聽字能寫” 的境界。
+Link | Route | /courses/jolly-phonics - JOLLY PHONICS
+
+Text | Course name | LITTLE WILLIAMS LEARNERS
+Image | Course image | /assets/home/mascot-03.png 912x835
+Text | Purpose | course icon
+Text | Paragraph | 為你的孩子未來作好準備！小小威廉學前英語是一個學前課程，讓幼童在一個充滿趣味互動的語境下學習英語，打好英語的根基。
+Link | Route | /courses/little-williams-learners - LITTLE WILLIAMS LEARNERS
+
+Text | Course name | WILLIAMS TALK TIME & STORYTELLING
+Image | Course image | /assets/home/mascot-02.png 912x835
+Text | Purpose | course icon
+Text | Paragraph | 小小威廉會話班提供一個全英文愉快的學習環境，引導學生勇於用英語表達，為升小面試作最好準備。
+Link | Route | /courses/williams-talk-time - WILLIAMS TALK TIME
+
+Text | Course name | WILLIAMS BEGINNERS
+Image | Course image | /assets/home/mascot-04.png 912x835
+Text | Purpose | course icon
+Text | Paragraph | 小小威廉基礎班能全方位從閱讀，文法，寫作等，為學生打好英語基礎，讓他們輕鬆應付升讀小學的英語要求。
+Link | Route | /courses/williams-beginners - WILLIAMS BEGINNERS
+
+Text | Course name | WILLIAMS READING and SPEAKING
+Image | Course image | /assets/home/mascot-05.png 912x835
+Text | Purpose | course icon
+Text | Paragraph | 威廉閱讀會話課程目的是提高學習者的理解能力，分析思維及流利會話能力。我們的閱讀素材擁有不同的種類，有小說及非小說類，透過多媒體互動活動及小組討論，刺激每個學生的興趣及促進他們獨立閱讀。
+Link | Route | /courses/williams-reading-speaking - WILLIAMS READING AND SPEAKING
+
+Text | Course name | WILLIAMS GRAMMAR and CREATIVE WRITING
+Image | Course image | /assets/home/mascot-06.png 912x835
+Text | Purpose | course icon
+Link | Route | /courses/williams-grammar-writing - WILLIAMS GRAMMAR AND CREATIVE WRITING
+
+Text | Course name | CAMBRIDGE ENGLISH
+Image | Course image | /assets/home/mascot-07.png 912x835
+Text | Purpose | course icon
+Link | Route | /courses/cambridge-english - CAMBRIDGE ENGLISH
+
+Text | Course name | INTENSIVE ENGLISH
+Image | Course image | /assets/home/mascot-08.png 912x835
+Text | Purpose | course icon
+Link | Route | /courses/intensive-english - INTENSIVE ENGLISH
+
+4. NEWS (blog highlights)
+Text | Title | NEWS
+Link | Route | /news/offers - Williams CALENDAR 2026
+Link | Route | /news/offers - Williams CALENDAR 2025
+Link | Route | /news/offers - Williams CALENDAR 2024
+Image | Featured | /assets/home/news-2026.png 2560x1207
+Image | Featured | /assets/home/asset-2.png 6499x3046
+
+5. Media & Gallery
+Image | Gallery image | /assets/home/featured-articles.png 3702x912
+Image | Awards | /assets/home/awards.png 1024x160
+Image | Magazine | /assets/home/magazine-interview.png n/a
+
+6. Footer (site footer)
+Text | Footer | footer present on root page
+Text | Phone | +852 4671 7248
+Link | External | https://api.whatsapp.com/send?phone=85246717248 - WhatsApp contact

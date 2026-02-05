@@ -1,0 +1,36 @@
+ROUTE:
+"/news/resources"
+
+PAGE NAME:
+FREE RESOURCES 教學資源
+
+PAGE STRUCTURE:
+1. Header & Navigation
+Link | Route | / - HOME
+Link | Route | /news/offers - OFFERS / 最新優惠
+Link | Route | /news/resources - FREE RESOURCES / 教學資源
+Link | Route | /contact - CONTACT / 聯絡我們
+
+2. Page Titles
+Text | H1 | Category: FREE RESOURCES 教學資源
+Text | Subtitle (EN) | Free printable & learning resources
+Text | Subtitle (ZH) | 免費教學資料與下載
+
+3. Summary
+Text | Paragraph | This category provides free teaching and learning resources (printables, worksheets and guides) when available. Current archive shows no posts in this category ("It seems we can't find what you're looking for."), so the page contains the category header and will list resources when added. 本分類顯示目前未有文章，保留分類標題與未來文章清單位置。
+
+4. Posts
+Text | Note | No posts found in the archive for this category at the time of capture. "It seems we can't find what you're looking for." / 目前未找到相關文章。
+
+5. Media
+Image | Hero background | /assets/news-resources/hero-bg.jpg
+Note | Purpose | Category hero banner background (original: ../wp-content/uploads/2020/05/William-English-027.jpg)
+
+6. Footer
+Text | Footer | © 2026 Williams Kingdom
+
+ASSETS (staged):
+- /assets/news-resources/hero-bg.jpg (jpg)
+
+NOTES:
+- Staged mkdir + cp commands appended to `PROMPT/PLAN/ASSETS/jpg.txt`. No files materialized yet. Reply "1" to materialize assets now, or "2" to continue to the next route.

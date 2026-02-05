@@ -1,0 +1,91 @@
+ROUTE:
+"/student-portfolio"
+
+PAGE NAME:
+STUDENT PORTFOLIO 學生學習成果
+
+PAGE STRUCTURE:
+1. Header & Navigation
+Link | Route | / - HOME
+Link | Route | /student-portfolio - STUDENT PORTFOLIO
+Link | Route | /contact - CONTACT
+
+2. Page Titles
+Text | H1 | STUDENT PORTFOLIO 學生學習成果
+Text | Subtitle (EN) | Student performance video gallery
+Text | Subtitle (ZH) | 學生作品與表演短片
+
+3. Summary
+Text | Paragraph | A video gallery showcasing student performances and class highlights collected in Jan 2026 and late 2025. Includes short MP4s for each student with headline/date captions where available. 保留每條影片的標題/日期資訊。
+
+4. Media
+Image | Hero image | /assets/student-portfolio/hero-bg.jpg
+Note | Purpose | Hero banner image (from archive: ../wp-content/uploads/2026/01/IMG_8709%e5%89%af%e6%9c%ac12-1.jpg)
+
+5. Videos (each entry = Video file + caption)
+Video | 20260102-FL-32178-Danny-K3-J2_logo.mp4 | /assets/student-portfolio/20260102-FL-32178-Danny-K3-J2_logo.mp4
+Text | Caption | 2 JAN 2026, K3, JOLLY PHONICS
+
+Video | 20260106-FL-32019-P1-Elkie-J4_logo.mp4 | /assets/student-portfolio/20260106-FL-32019-P1-Elkie-J4_logo.mp4
+Text | Caption | 6 JAN 2026, P1, JOLLY PHONICS
+
+Video | 20260106-SS-3015-Ariel-Cheung-J4-P1_logo.mp4 | /assets/student-portfolio/20260106-SS-3015-Ariel-Cheung-J4-P1_logo.mp4
+Text | Caption | 6 JAN 2026, Ariel Cheung
+
+Video | 20260107-TP-22703-Marcus-Chu-K3-J2_logo.mp4 | /assets/student-portfolio/20260107-TP-22703-Marcus-Chu-K3-J2_logo.mp4
+Text | Caption | 7 JAN 2026, Marcus Chu
+
+Video | 20260107-TP-22551-Alien-Hui-K3-J2_logo.mp4 | /assets/student-portfolio/20260107-TP-22551-Alien-Hui-K3-J2_logo.mp4
+Text | Caption | 7 JAN 2026, Alien Hui
+
+Video | LWH-61271-Ming-Yin-J3-K3.mp4 | /assets/student-portfolio/LWH-61271-Ming-Yin-J3-K3.mp4
+Text | Caption | (no caption shown)
+
+Video | SS-2566-Leo-Sin-J5-k3_logo.mp4 | /assets/student-portfolio/SS-2566-Leo-Sin-J5-k3_logo.mp4
+Text | Caption | (no caption shown)
+
+Video | LWH-61366-Kelly-J5-P1_logo.mp4 | /assets/student-portfolio/LWH-61366-Kelly-J5-P1_logo.mp4
+Video | LWH-61387-Anna-J4-P2_logo.mp4 | /assets/student-portfolio/LWH-61387-Anna-J4-P2_logo.mp4
+Video | 20251205-LWH-61178-Anson-J5-P2_logo.mp4 | /assets/student-portfolio/20251205-LWH-61178-Anson-J5-P2_logo.mp4
+Video | 20251208-TP-22557-Edan-Lee-P1-J3_logo.mp4 | /assets/student-portfolio/20251208-TP-22557-Edan-Lee-P1-J3_logo.mp4
+Video | 9-Dec_LWH-61679-Tiger-J5-P1_Logo.mp4 | /assets/student-portfolio/9-Dec_LWH-61679-Tiger-J5-P1_Logo.mp4
+Video | LWH-61502-Jenny-J5-P1_logo.mp4 | /assets/student-portfolio/LWH-61502-Jenny-J5-P1_logo.mp4
+Video | LWH-61391-Cici-J4-P2_logo.mp4 | /assets/student-portfolio/LWH-61391-Cici-J4-P2_logo.mp4
+Video | LWH-61578-Kaden-J2-K3_logo.mp4 | /assets/student-portfolio/LWH-61578-Kaden-J2-K3_logo.mp4
+Video | 41896-Eunice-Ye-P1_-J4-logo-short-2.mp4 | /assets/student-portfolio/41896-Eunice-Ye-P1_-J4-logo-short-2.mp4
+Video | 41981-Hazel-Wong-P1_-J4.mp4 | /assets/student-portfolio/41981-Hazel-Wong-P1_-J4.mp4
+Video | 42118-Will-Huang-P3_-J4.mp4 | /assets/student-portfolio/42118-Will-Huang-P3_-J4.mp4
+Video | 20251217-TP-22537-Jasper-Lam-P1-J4_logo.mp4 | /assets/student-portfolio/20251217-TP-22537-Jasper-Lam-P1-J4_logo.mp4
+Video | 20251219-TP-21339-Joe-Wu-P1-J4-_logo.mp4 | /assets/student-portfolio/20251219-TP-21339-Joe-Wu-P1-J4-_logo.mp4
+Video | 20251223-FL-32192-K3-Rex-Fung-J3_logo.mp4 | /assets/student-portfolio/20251223-FL-32192-K3-Rex-Fung-J3_logo.mp4
+Video | 20251223-FL-31950-P2-Patrick-Wong-J4_logo.mp4 | /assets/student-portfolio/20251223-FL-31950-P2-Patrick-Wong-J4_logo.mp4
+Video | 20251223-FL-31988-P1-Abby-Yu-J4_logo.mp4 | /assets/student-portfolio/20251223-FL-31988-P1-Abby-Yu-J4_logo.mp4
+Video | 20251229-FL-31967-P1-Victor-Pan-J4_logo.mp4 | /assets/student-portfolio/20251229-FL-31967-P1-Victor-Pan-J4_logo.mp4
+Video | 20251229-FL-31963-P1-Jesse-J3_logo.mp4 | /assets/student-portfolio/20251229-FL-31963-P1-Jesse-J3_logo.mp4
+Video | 20251230-SS-J2-2986-K3-Himson-Lau-1.mp4 | /assets/student-portfolio/20251230-SS-J2-2986-K3-Himson-Lau-1.mp4
+Video | 20251231-3031-P1-Trone-J5_logo.mp4 | /assets/student-portfolio/20251231-3031-P1-Trone-J5_logo.mp4
+Video | 20251101-FL-31946-K3-Ellie-Ho-J2-logo.mp4 | /assets/student-portfolio/20251101-FL-31946-K3-Ellie-Ho-J2-logo.mp4
+Video | 20251104-TP-22530-Pak-Lam-K3-J2-Exam-1.mp4 | /assets/student-portfolio/20251104-TP-22530-Pak-Lam-K3-J2-Exam-1.mp4
+Video | 20251105-FL-32164-K3-Kiki-Wong-J2_logo.mp4 | /assets/student-portfolio/20251105-FL-32164-K3-Kiki-Wong-J2_logo.mp4
+Video | 20251107-SS-J5-K3-2566-Leo-Sin-1.mp4 | /assets/student-portfolio/20251107-SS-J5-K3-2566-Leo-Sin-1.mp4
+Video | 20251110-FP-51781-Yanis-So-J5-Exam-K3-1.mp4 | /assets/student-portfolio/20251110-FP-51781-Yanis-So-J5-Exam-K3-1.mp4
+Video | 20251112-SS-J1-K3-2994-Rita-Chung_logo.mp4 | /assets/student-portfolio/20251112-SS-J1-K3-2994-Rita-Chung_logo.mp4
+Video | 20251112-SS-J1-K3-2586-Nick-Tang_logo.mp4 | /assets/student-portfolio/20251112-SS-J1-K3-2586-Nick-Tang_logo.mp4
+Video | 20251112-SS-J1-K3-2848-Ryan-Ho_logo-1.mp4 | /assets/student-portfolio/20251112-SS-J1-K3-2848-Ryan-Ho_logo-1.mp4
+Video | 20251112-SS-J2-K3-2812-JonathanLee-_Logo.mp4 | /assets/student-portfolio/20251112-SS-J2-K3-2812-JonathanLee-_Logo.mp4
+Video | 20251125-SS-J2-K3-2980-Hayley-Chui.mp4 | /assets/student-portfolio/20251125-SS-J2-K3-2980-Hayley-Chui.mp4
+Video | 20251125-FL-31890-P1-Jayden-Lau-J5_logo.mp4 | /assets/student-portfolio/20251125-FL-31890-P1-Jayden-Lau-J5_logo.mp4
+Video | 20251128-J2-P1-SS-2923-Moon-Tsang.mp4 | /assets/student-portfolio/20251128-J2-P1-SS-2923-Moon-Tsang.mp4
+Video | 20251129-SS-J4-P1-2760-Yuki-Cheung_logo.mp4 | /assets/student-portfolio/20251129-SS-J4-P1-2760-Yuki-Cheung_logo.mp4
+Video | 20251129-FL-31966-P1-Bella-So-J4_logo.mp4 | /assets/student-portfolio/20251129-FL-31966-P1-Bella-So-J4_logo.mp4
+Video | 20251129-FL-32064-K3-Eunice-Leung-J4_logo.mp4 | /assets/student-portfolio/20251129-FL-32064-K3-Eunice-Leung-J4_logo.mp4
+
+6. Footer
+Text | Footer | © 2026 Williams Kingdom
+
+ASSETS (staged):
+- /assets/student-portfolio/hero-bg.jpg (jpg)
+- (dozens of mp4 files staged in `PROMPT/PLAN/ASSETS/mp4.txt`)
+
+NOTES:
+- Staged asset copy commands for hero JPG and each MP4 are appended to PROMPT/PLAN/ASSETS/{jpg,mp4}.txt. Do not materialize files until user approval.
