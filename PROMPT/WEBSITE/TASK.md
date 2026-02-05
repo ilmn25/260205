@@ -8,6 +8,9 @@ A. SPA GENERATION INSTRUCTIONS
    - Contains website icon path for index.html  
    - All /assets paths become:  
        {ASSETS_URL} + "/assets/filename.ext"  
+     - When using a GitHub repository as the source, set `ASSETS_URL` to the repository raw URL that includes the refs/heads branch path. Use the pattern:
+       `https://raw.githubusercontent.com/<owner>/<repo>/refs/heads/<branch>`
+     - Example: `https://raw.githubusercontent.com/ilmn25/260205/refs/heads/master`
    - Any icon or image NOT in /assets uses the lucide icon library  
    - Add a universal constant for:  
        • ASSETS_URL prefix  
@@ -21,7 +24,6 @@ A. SPA GENERATION INSTRUCTIONS
        "/" → PLAN/PAGES/root.txt  
        "/staff/jim-smith" → PLAN/PAGES/staff/jim-smith.txt  
    - If a route is already completed, skip it  
-   - After finishing a route file, WAIT for user to say **"continue"**
 
 3. PAGE CONTENT RULES  
    - Raw text inside route txt files may be in any language  
