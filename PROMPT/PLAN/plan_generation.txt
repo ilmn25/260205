@@ -67,9 +67,11 @@ C. EXTRACTING CONTENT FROM THE HTML
    - **Do NOT include styling, fonts, localization metadata, or formatting details.**
 
 2. Extract all assets (mp3, mp4, svg, png, jpg, gif, etc.)  
+   - **Include every image**, including banners, background images, icons, logos, and decorative images.  
    - **Do NOT extract fonts.**  
    - For each asset, follow the rules in `assets_handling.txt`.  
-   - Always include the asset path AND its resolution.
+   - Always include the asset path AND its resolution.  
+   - For each asset, add a concise purpose line explaining its role in that section (e.g., "Purpose: hero banner background", "Purpose: course icon", "Purpose: teacher portrait").
 
 3. Extract all links:  
    - If the link points to another page in the site tree →  
@@ -82,11 +84,18 @@ D. BUILDING THE OUTPUT FILE
 ====================================================
 
 1. Follow the exact required format.  
+   Every element (text, url, asset) must be listed on its own line with **Type | Label | Content**.  
+   Examples:  
+   Image | Banner | /assets/new/path/image2.jpg 124x124  
+   Text | Paragraph | blahblahblah  
+   Text | Caption | caption text here  
+   Link | Route | /about  
+   Link | External | https://youtu.be/14OBXAjgj7a  
    Below is the **example** you must follow precisely:
 
 ----------------------------------------------------
 EXAMPLE FORMAT  
-(THIS IS THE MODEL YOU MUST FOLLOW FOR EVERY PAGE)
+(THIS IS THE EXAMPLE FORMAT YOU MUST FOLLOW FOR EVERY PAGE, DO NOT COPY THE ACTUAL DATA)
 
 ROUTE:  
 /about
@@ -96,70 +105,81 @@ About Us
 
 PAGE STRUCTURE:
 1. Header, same as most of the website, with the navigation bar, logo and name of the website. The name and logo redirects to "/"
-Name: Super Classes Education  
-Picture: /assets/new/path/image.png 523x214  
-Navigation bar:  
-Courses  
-    /courses/math - Math  
-    /courses/English - English  
-/about - About Us  
-/pricing - Pricing
+Text | Site name | Super Classes Education  
+Image | Logo | /assets/new/path/image.png 523x214  
+Text | Purpose | site logo  
+Text | Navigation item | Courses  
+Link | Route | /courses/math - Math  
+Link | Route | /courses/English - English  
+Link | Route | /about - About Us  
+Link | Route | /pricing - Pricing
 
 2. A hero banner and the page's title on top of it  
-Title: About Us  
-Banner: /assets/new/path/image.gif 124x156
+Text | Title | About Us  
+Image | Banner | /assets/new/path/image.gif 124x156  
+Text | Purpose | hero banner background
 
 3. A grid section containing each staff, their name and degree, each can be clicked on to enter their page  
-Teacher: Jim Smith  
-Picture: /assets/new/path/image.png 162x211  
-Degree: Bsc in Computer Science @ Hong Kong University  
-Route: /staff/jim_smith
+Text | Teacher name | Jim Smith  
+Image | Teacher portrait | /assets/new/path/image.png 162x211  
+Text | Purpose | teacher portrait  
+Text | Degree | Bsc in Computer Science @ Hong Kong University  
+Link | Route | /staff/jim_smith
 
-Teacher: Tommy Chan  
-Picture: /assets/new/path/image.png 162x167  
-Degree: Masters in English @ Harvard University, Bsc in English @ Washington University  
-Route: /staff/tommy_chan
+Text | Teacher name | Tommy Chan  
+Image | Teacher portrait | /assets/new/path/image.png 162x167  
+Text | Purpose | teacher portrait  
+Text | Degree | Masters in English @ Harvard University, Bsc in English @ Washington University  
+Link | Route | /staff/tommy_chan
 
-Teacher: Alice Wong  
-Picture: /assets/new/path/image3.png 122x152  
-Degree: PhD in Mathematics @ Stanford University  
-Route: /staff/alice_wong
+Text | Teacher name | Alice Wong  
+Image | Teacher portrait | /assets/new/path/image3.png 122x152  
+Text | Purpose | teacher portrait  
+Text | Degree | PhD in Mathematics @ Stanford University  
+Link | Route | /staff/alice_wong
 
 4. A paragraph with a image beside it, with a caption  
-Paragraph: "Our mission is to provide quality education and foster lifelong learning."  
-Image: /assets/new/path/image.jpg 132x134  
-Caption: "Students engaged in collaborative learning"
+Text | Paragraph | "Our mission is to provide quality education and foster lifelong learning."  
+Image | Supporting image | /assets/new/path/image.jpg 132x134  
+Text | Purpose | supporting image for mission statement  
+Text | Caption | "Students engaged in collaborative learning"
 
 5. A paragraph with a image beside it, with a caption  
-Paragraph: "威廉王國英語教室作為一間以心為心、師資優良的教育中心，旨在為小朋友提供「親切、專業、生動」的英文學習體驗。  
+Text | Paragraph | "威廉王國英語教室作為一間以心為心、師資優良的教育中心，旨在為小朋友提供「親切、專業、生動」的英文學習體驗。  
 我們深信寓學習於娛樂，透過專業外語老師團隊適切的鼓勵和有趣互動的教學方式，藉此培養學生對英語的興趣，才是學好英文的不二法門。"  
-Image: /assets/new/path/image2.jpg 124x124  
-Caption: "Faculty leading interactive workshops"
+Image | Supporting image | /assets/new/path/image2.jpg 124x124  
+Text | Purpose | supporting image for introduction paragraph  
+Text | Caption | "Faculty leading interactive workshops"
 
 6. A video embed with a description  
-Video embed: https://youtu.be/14OBXAjgj7a  
-Description: "威廉王國英語教室輔導專班，是專為額外需要鞏固英語基礎的學童而設。"
+Link | External video | https://youtu.be/14OBXAjgj7a  
+Text | Purpose | promotional video for the program  
+Text | Description | "威廉王國英語教室輔導專班，是專為額外需要鞏固英語基礎的學童而設。"
 
 7. A testimonial section with quotes from students  
-Quote: "This school has transformed my learning experience."  
-Student: Sarah Lee  
-Picture: /assets/new/path/student1.png 122x152
+Text | Quote | "This school has transformed my learning experience."  
+Text | Student name | Sarah Lee  
+Image | Student portrait | /assets/new/path/student1.png 122x152  
+Text | Purpose | student testimonial portrait
 
-Quote: "The teachers are supportive and inspiring."  
-Student: David Wong  
-Picture: /assets/new/path/student2.png 124x152
+Text | Quote | "The teachers are supportive and inspiring."  
+Text | Student name | David Wong  
+Image | Student portrait | /assets/new/path/student2.png 124x152  
+Text | Purpose | student testimonial portrait
 
 8. A contact section with address and map  
-Address: "123 Education Street, Kowloon, Hong Kong"  
-Map: a google map embedding to the address  
-Email: contact@ourschool.edu.hk  
-Phone: +852 1234 5678
+Text | Address | "123 Education Street, Kowloon, Hong Kong"  
+Link | Map embed | a google map embedding to the address  
+Text | Purpose | location map embed  
+Text | Email | contact@ourschool.edu.hk  
+Text | Phone | +852 1234 5678
 
 8. A large centered image  
-Image: /assets/new/path/image.png 1214x1021
+Image | Featured image | /assets/new/path/image.png 1214x1021  
+Text | Purpose | full-width featured image
 
 9. Footer, same as most of the WEBSITE  
-Text: "© 2025, Super Classes Education"
+Text | Footer | "© 2025, Super Classes Education"
 
 ----------------------------------------------------
 
@@ -170,9 +190,11 @@ Text: "© 2025, Super Classes Education"
    - Only structure + raw content + required metadata.
 
 3. Ensure every section includes:  
+   - Every element listed as Type | Label | Content  
    - All text  
    - All images/audio/video with processed paths  
    - All captions  
+   - A concise purpose line for each asset  
    - All links rewritten correctly  
    - No styling or localization notes
 
