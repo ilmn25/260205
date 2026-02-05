@@ -5,7 +5,6 @@ DO NOT SUMMARIZE OUR CHAT HISTORY
 Never be verbose towards me. Only mark your progress using the given status messages:  
 ====================================================
 A. INITIAL SETUP
-====================================================
 
 1. Read PLAN/MAIN.txt  
    - Extract the list of routes in the exact order they appear.
@@ -13,14 +12,11 @@ A. INITIAL SETUP
 2. Prepare to process **one route at a time**.  
    - After finishing one route, **stop and wait** for the user to say “continue”.
 
-3. Todo list genration
+3. Todo list generation
+3a. Ask user which path to do, wait for respond
 
-3a. Start route processing  
+3b. Start route
    → Status example: "starting route /about"
-
-3b. Check if PLAN/PAGES/[route].txt already exists and has content  
-   → Status example: "checking for existing file"  
-   → If exists, skip to 3g
 
 3d. Load associated HTML from archive path  
    → Status example: "loading html source"
@@ -35,41 +31,40 @@ A. INITIAL SETUP
      • Status example: "updating mp4.txt"
 
 3f. Build and Save file to PLAN/PAGES/[route].txt  
+   → If already exist, replace
    → Status example: "saving output file"
+
+3g. Update all PLAN/ASSETS/[ext].txt files
+   → Status example: "Updating mp4.txt"
 
 3g. Stop and wait for user command  
    → Status example: "route complete, awaiting continue to next route [route]"
 
 ====================================================
 B. FOR EACH ROUTE (IN ORDER)
-====================================================
 
 1. Identify the current route.  
    - If the route is `/`, the output filename must be `root.txt`.  
    - Otherwise, output filename is `PLAN/PAGES/[route].txt`.
 
-2. Check if the output file already exists AND contains text.  
-   - If yes → **skip this route** and wait for user instruction.  
-   - If no → proceed.
-
 3. Locate the associated HTML file using the path provided in MAIN.txt.
 
 ====================================================
 C. EXTRACTING CONTENT FROM THE HTML
-====================================================
 
 1. Extract **all raw text content** from the page:  
    - Paragraphs  
    - Captions  
    - Small text  
    - Any visible text  
-   - Keep original language  
+   - Keep original language
    - **Do NOT include styling, fonts, localization metadata, or formatting details.**
 
 2. Extract all assets (mp3, mp4, svg, png, jpg, gif, etc.)  
-   - **Include every image**, including banners, background images, icons, logos, and decorative images.  
-   - **Do NOT extract fonts.**  
-   - For each asset, follow the rules in `assets_handling.txt`.  
+   - **Include every image**, including banners, background images, icons, logos, and decorative images.
+   - **Do NOT extract fonts.**
+   - **Include all assets in slideshow type displays**
+   - For each asset, follow the rules in "E. ASSET MANAGEMENT"
    - Always include the asset path AND its resolution.  
    - For each asset, add a concise purpose line explaining its role in that section (e.g., "Purpose: hero banner background", "Purpose: course icon", "Purpose: teacher portrait").
 
@@ -79,9 +74,13 @@ C. EXTRACTING CONTENT FROM THE HTML
    - If the link points to an external resource (e.g., YouTube, WhatsApp) →  
      Keep the original URL unchanged.
 
+4. Headers and footers
+   - If the current route is "/", always include
+   - If not, read the first 20 and last 20 lines of root.txt, if the header and footer is different from "/", provide detailed elements list
+   - Else, just state the header or footer is present in PAGE STRUCTURE, and add a "same as root" line instead of listing elements
+
 ====================================================
 D. BUILDING THE OUTPUT FILE
-====================================================
 
 1. Follow the exact required format.  
    Every element (text, url, asset) must be listed on its own line with **Type | Label | Content**.  
@@ -178,6 +177,11 @@ Text | Phone | +852 1234 5678
 Image | Featured image | /assets/new/path/image.png 1214x1021  
 Text | Purpose | full-width featured image
 
+9. A image slideshow  
+Image | slideshow | /assets/new/path/image.png 1224x1021
+Image | slideshow | /assets/new/path/image.png 1214x1021
+Image | slideshow | /assets/new/path/image.png 1214x1021
+
 9. Footer, same as most of the WEBSITE  
 Text | Footer | "© 2025, Super Classes Education"
 
@@ -199,13 +203,84 @@ Text | Footer | "© 2025, Super Classes Education"
    - No styling or localization notes
 
 ====================================================
-E. FINALIZATION
+E. ASSET HANDLING WORKFLOW
+
+1. Identify the asset encountered in the archive SPA tree
+   - Determine its file extension (mp4, png, svg, jpg, etc.)
+
+2. Prepare the corresponding PLAN/ASSETS/[ext].txt file
+   - The file must be named exactly after the extension, e.g.:
+     PLAN/ASSETS/mp4.txt
+     PLAN/ASSETS/png.txt
+     PLAN/ASSETS/svg.txt
+   - If the file does not exist, create it.
+
+3. Check if the archive file path is already listed in the corrosponding PLAN/ASSETS/[ext].txt
+   → Status example: "checking asset list"
+   → If the archive path already exists, use the existing mapped asset path for Step2.txt
+   → If not, continue to 3c
+
+4. Add new asset entry
+   - Choose a clean, suitable name for the asset inside /assets/
+   - If the chosen directory does not exist, add mkdir commands at the top of the file
+     Example:
+       mkdir -p assets/home
+       mkdir -p assets/home/about
+   - Ensure the new filename is cleaner than the archive’s original (avoid messy names like banner_new(1).png)
+   - IMPORTANT: The archive file path must be written **exactly**, unchanged.
+
+5. Create the copy command
+   Example:
+     cp archive/path/to/file.png assets/home/logo.png
+     cp archive/path/of/file.png assets/home/banner.png
+     cp archive/path/to/another/file.svg assets/home/about/header.svg
+
+6. Ensure no duplicate files are created
+   - If an asset already exists in the list, do not create a new entry.
+
+7. Update PLAN/ASSETS/[ext].txt
+   → Status example: "updating png.txt"
+
+8. Use the new assets/ path for the relevant PAGES/ file
+
+E3. RULES FOR ADDING NEW ASSETS
+
+1. The archive file path must be written exactly as it is
+   - No renaming, no trimming, no modifications, include hidden unicode symbols.
+
+2. The new asset path and name must be clean and organized
+   - Prefer short, readable filenames.
+   - Organize assets into folders such as:
+     assets/home
+     assets/home/about
+     assets/course/math
+   - Avoid cluttered or auto-generated names.
+
+3. Do NOT create duplicate entries
+   - If an asset already exists, reuse its mapped path.
+
+4. Every new entry must include:
+   - mkdir commands (if needed)
+   - cp command mapping archive → assets
+   - Clean filename in the assets folder
+
+----------------------------------------------------
+OUTPUT FORMAT FOR EACH NEW ASSET
+
+Example block (must follow this structure exactly):
+
+mkdir -p assets/home
+mkdir -p assets/home/about
+
+cp archive/path/to/file.png assets/home/logo.png
+cp archive/path/of/file.png assets/home/banner.png
+cp archive/path/to/another/file.svg assets/home/about/header.svg
+
 ====================================================
+F. FINALIZATION
 
-1. Save the completed file to:  
-   PLAN/PAGES/[route].txt  
-   (or root.txt for `/`)
-
-2. Stop.  
-3. Wait for the user to say **“continue”** before processing the next route.
+Always do the following:
+1. Save the completed file to PLAN/PAGES/[route].txt (or root.txt for `/`)
+2. Update all the relevant PLAN/ASSETS/[ext].txt with the assets.
+3. Stop and wait for the user to provide instruction.
  

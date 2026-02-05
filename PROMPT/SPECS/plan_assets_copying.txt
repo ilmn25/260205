@@ -50,6 +50,6 @@ copy fail, checking for name and hidden unicode characters
 ====================================================
 E. FINALIZATION
 ====================================================
-
+w
 1. Update PLAN/ASSETS/[ext].txt after corrections.  
 2. Return to page generation.  
