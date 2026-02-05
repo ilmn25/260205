@@ -4,9 +4,6 @@ Task:
 You are making a SPA
 Set up a project with the project name and description provided
 
-
-
-
 The prompt for the project is the website description + "Do not add anything unless explicitly told to do so"
 Set up the react and tailwind stack, and make a empty root page, DO NOT ADD ANYTHING ELSE
 
@@ -71,4 +68,4 @@ export const initI18n = async () => {
   }
 };
 
-export default i18n;
+export default i18n; 

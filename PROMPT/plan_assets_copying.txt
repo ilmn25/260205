@@ -1,20 +1,55 @@
-follow instruction in txt exactly and carefully.
-DO NOT SUMMARIZE OUR CONVERSATION HISTORY
-make a to do list. for each file in PROMP/ASSETS, have a copy [extension] files, and a validating [extension] files
-validation stage scans through the txt again and check if every file has a corrosponding copy in /assets,  
-Never be verbose towards me, only mark your progress with the following words ONLY:
--making directories
--copying [destination filename]
--copy success
--copy fail, checking for name and hidden unicode characters
--[destination filename] missing, copying again
+====================================================
+A. INITIAL SETUP
+====================================================
 
-for each txt file in PLAN/ASSETS/, run each line of bash command one by one
-if it fails to copy, it means the /archive path is wrongly written, 
-fix this by first trying to check for hidden unicode characters (especially for names with date and time in it)
-and then listing the same format files in the folder with the file is directly in (in archive) and retrieve the correct name for the file, 
-it is almost always the name being the problem, not the path folder names
-update the txt and run the copy command again
-do not generate any summary, do not be verbose, keep it concise
+1. Create a to‑do list for PROMP/ASSETS  
+   - For each file extension, generate two tasks:  
+     • PROCESSING [extension].txt
+     • VALIDATING [extension].txt
+ 
+====================================================
+B. PROCESSING PLAN/ASSETS/[ext].txt
+====================================================
 
-DO NOT SUMMARIZE OUR CONVERSATION HISTORY
+1. For each txt file in PLAN/ASSETS/, run every bash command line‑by‑line.
+
+2. If a copy command fails:  
+   - The archive path is incorrect.  
+   - First check for hidden unicode characters in the filename.  
+   - Then list files in the archive directory containing the file.  
+   - Retrieve the correct filename (folder path is usually correct).  
+   - Update the txt file with the corrected archive path.  
+   - Run the copy command again.
+
+3. Do not generate summaries.  
+   Do not be verbose.  
+   Only output the allowed progress markers.
+
+====================================================
+C. VALIDATION & CORRECTION STAGE RULES
+====================================================
+
+1. **Ensure every archive file listed has a corresponding asset copy**.  
+2. If missing, output:  
+   “[destination filename] missing, copying again”  
+3. Re‑run the corrected copy command.  
+4. Maintain strict formatting and minimal output.
+
+====================================================
+D. REPLY FORMAT
+====================================================
+
+Use ONLY the following progress indicators:
+
+making directories  
+copying [destination filename]  
+copy success  
+copy fail, checking for name and hidden unicode characters  
+[destination filename] missing, copying again
+
+====================================================
+E. FINALIZATION
+====================================================
+
+1. Update PLAN/ASSETS/[ext].txt after corrections.  
+2. Return to page generation.  

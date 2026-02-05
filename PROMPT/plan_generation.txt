@@ -1,13 +1,189 @@
-
-DO page_generation.txt, AND DO assets_handling.txt WHEN ENCOUNTER A ASSET FILE (DEFINED IN STEP 2), follow instruction in txt exactly and carefully.
+PAGE GENERATION 
+follow instruction in this file exactly and carefully.
 DO NOT SUMMARIZE OUR CHAT HISTORY
-make a to do list with these 2
--make page_generation file
--make assets_handling files
-Never be verbose towards me, only mark your progress with the follow words ONLY:
--step 2 start
--checking what is already done...
--begin making [route here].txt
--adding a asset to PLAN/ASSETS (step 3)
--[route here].txt done
--waiting for "continue" to do next route "[next route here]"
+
+Never be verbose towards me. Only mark your progress using the given status messages:  
+====================================================
+A. INITIAL SETUP
+====================================================
+
+1. Read PLAN/MAIN.txt  
+   - Extract the list of routes in the exact order they appear.
+
+2. Prepare to process **one route at a time**.  
+   - After finishing one route, **stop and wait** for the user to say “continue”.
+
+3. Todo list genration
+
+3a. Start route processing  
+   → Status example: "starting route /about"
+
+3b. Check if PLAN/PAGES/[route].txt already exists and has content  
+   → Status example: "checking for existing file"  
+   → If exists, skip to 3g
+
+3d. Load associated HTML from archive path  
+   → Status example: "loading html source"
+
+3e. Begin section‑by‑section extraction   
+   → Statuses:  
+     • "starting section 1"  
+     • "extracting text"  
+     • "asset found, performing assets_handling.txt"  
+     • "rewriting internal link to MAIN.txt route"  
+     • "checking section for missed content"
+     • Status example: "updating mp4.txt"
+
+3f. Build and Save file to PLAN/PAGES/[route].txt  
+   → Status example: "saving output file"
+
+3g. Stop and wait for user command  
+   → Status example: "route complete, awaiting continue to next route [route]"
+
+====================================================
+B. FOR EACH ROUTE (IN ORDER)
+====================================================
+
+1. Identify the current route.  
+   - If the route is `/`, the output filename must be `root.txt`.  
+   - Otherwise, output filename is `PLAN/PAGES/[route].txt`.
+
+2. Check if the output file already exists AND contains text.  
+   - If yes → **skip this route** and wait for user instruction.  
+   - If no → proceed.
+
+3. Locate the associated HTML file using the path provided in MAIN.txt.
+
+====================================================
+C. EXTRACTING CONTENT FROM THE HTML
+====================================================
+
+1. Extract **all raw text content** from the page:  
+   - Paragraphs  
+   - Captions  
+   - Small text  
+   - Any visible text  
+   - Keep original language  
+   - **Do NOT include styling, fonts, localization metadata, or formatting details.**
+
+2. Extract all assets (mp3, mp4, svg, png, jpg, gif, etc.)  
+   - **Do NOT extract fonts.**  
+   - For each asset, follow the rules in `assets_handling.txt`.  
+   - Always include the asset path AND its resolution.
+
+3. Extract all links:  
+   - If the link points to another page in the site tree →  
+     **Replace the URL with the ROUTE listed in MAIN.txt**, not the archive path.  
+   - If the link points to an external resource (e.g., YouTube, WhatsApp) →  
+     Keep the original URL unchanged.
+
+====================================================
+D. BUILDING THE OUTPUT FILE
+====================================================
+
+1. Follow the exact required format.  
+   Below is the **example** you must follow precisely:
+
+----------------------------------------------------
+EXAMPLE FORMAT  
+(THIS IS THE MODEL YOU MUST FOLLOW FOR EVERY PAGE)
+
+ROUTE:  
+/about
+
+PAGE NAME:  
+About Us
+
+PAGE STRUCTURE:
+1. Header, same as most of the website, with the navigation bar, logo and name of the website. The name and logo redirects to "/"
+Name: Super Classes Education  
+Picture: /assets/new/path/image.png 523x214  
+Navigation bar:  
+Courses  
+    /courses/math - Math  
+    /courses/English - English  
+/about - About Us  
+/pricing - Pricing
+
+2. A hero banner and the page's title on top of it  
+Title: About Us  
+Banner: /assets/new/path/image.gif 124x156
+
+3. A grid section containing each staff, their name and degree, each can be clicked on to enter their page  
+Teacher: Jim Smith  
+Picture: /assets/new/path/image.png 162x211  
+Degree: Bsc in Computer Science @ Hong Kong University  
+Route: /staff/jim_smith
+
+Teacher: Tommy Chan  
+Picture: /assets/new/path/image.png 162x167  
+Degree: Masters in English @ Harvard University, Bsc in English @ Washington University  
+Route: /staff/tommy_chan
+
+Teacher: Alice Wong  
+Picture: /assets/new/path/image3.png 122x152  
+Degree: PhD in Mathematics @ Stanford University  
+Route: /staff/alice_wong
+
+4. A paragraph with a image beside it, with a caption  
+Paragraph: "Our mission is to provide quality education and foster lifelong learning."  
+Image: /assets/new/path/image.jpg 132x134  
+Caption: "Students engaged in collaborative learning"
+
+5. A paragraph with a image beside it, with a caption  
+Paragraph: "威廉王國英語教室作為一間以心為心、師資優良的教育中心，旨在為小朋友提供「親切、專業、生動」的英文學習體驗。  
+我們深信寓學習於娛樂，透過專業外語老師團隊適切的鼓勵和有趣互動的教學方式，藉此培養學生對英語的興趣，才是學好英文的不二法門。"  
+Image: /assets/new/path/image2.jpg 124x124  
+Caption: "Faculty leading interactive workshops"
+
+6. A video embed with a description  
+Video embed: https://youtu.be/14OBXAjgj7a  
+Description: "威廉王國英語教室輔導專班，是專為額外需要鞏固英語基礎的學童而設。"
+
+7. A testimonial section with quotes from students  
+Quote: "This school has transformed my learning experience."  
+Student: Sarah Lee  
+Picture: /assets/new/path/student1.png 122x152
+
+Quote: "The teachers are supportive and inspiring."  
+Student: David Wong  
+Picture: /assets/new/path/student2.png 124x152
+
+8. A contact section with address and map  
+Address: "123 Education Street, Kowloon, Hong Kong"  
+Map: a google map embedding to the address  
+Email: contact@ourschool.edu.hk  
+Phone: +852 1234 5678
+
+8. A large centered image  
+Image: /assets/new/path/image.png 1214x1021
+
+9. Footer, same as most of the WEBSITE  
+Text: "© 2025, Super Classes Education"
+
+----------------------------------------------------
+
+2. **Do NOT add anything not in the format.**  
+   - No summaries  
+   - No interpretations  
+   - No extra commentary  
+   - Only structure + raw content + required metadata.
+
+3. Ensure every section includes:  
+   - All text  
+   - All images/audio/video with processed paths  
+   - All captions  
+   - All links rewritten correctly  
+   - No styling or localization notes
+
+====================================================
+E. FINALIZATION
+====================================================
+
+1. Save the completed file to:  
+   PLAN/PAGES/[route].txt  
+   (or root.txt for `/`)
+
+2. Stop.  
+3. Wait for the user to say **“continue”** before processing the next route.
+ 
