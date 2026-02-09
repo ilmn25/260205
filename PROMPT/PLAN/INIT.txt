@@ -1,5 +1,0 @@
-PROJECT NAME:
-Williams Kingdom | 威廉王國英語教室
-
-DESCRIPTION:
-A bilingual English learning center website for children and parents, providing information on courses, teachers, resources, and contact details.
